@@ -1,10 +1,8 @@
-End-to-End Sales Forecasting Pipeline – Walmart Sales Dataset (Kaggle)
+Project - End-to-End Sales Forecasting Pipeline – Walmart Sales Dataset (Kaggle)
 
 
 Dataset - https://www.kaggle.com/datasets/aslanahmedov/walmart-sales-forecast
 
-
-I Project: Walmart Sales Forecasting Pipeline
 
 I developed a complete end-to-end sales forecasting pipeline for the Walmart dataset using Azure AutoML, showcasing hands-on experience with cloud-based automated machine learning.
 
