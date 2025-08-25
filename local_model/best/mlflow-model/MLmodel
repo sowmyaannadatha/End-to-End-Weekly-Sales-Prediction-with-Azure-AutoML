@@ -1,0 +1,33 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.22
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/ai-ml-automl:22
+  azureml.engine: automl
+mlflow_version: 2.15.1
+model_size_bytes: 979636
+model_uuid: aa6a656463ab44dd82196060d0f1a378
+run_id: brave_clock_vn26600n18_2
+signature:
+  inputs: '[{"type": "string", "name": "store", "required": true}, {"type": "long",
+    "name": "dept", "required": true}, {"type": "datetime", "name": "date", "required":
+    true}, {"type": "boolean", "name": "isholiday", "required": true}, {"type": "long",
+    "name": "day_of_week", "required": true}, {"type": "long", "name": "month", "required":
+    true}, {"type": "long", "name": "year", "required": true}, {"type": "long", "name":
+    "week_of_year", "required": true}, {"type": "double", "name": "rolling_7", "required":
+    true}, {"type": "double", "name": "rolling_30", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-08-22 18:41:18.960701'
